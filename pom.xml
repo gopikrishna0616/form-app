@@ -4,12 +4,14 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>com.example</groupId>
   <artifactId>form-app</artifactId>
   <version>1.0</version>
   <packaging>war</packaging>
 
-  <name>form Web App</name>
+  <name>Form Web App</name>
+  <description>A simple Java Servlet-based form handling web application</description>
 
   <dependencies>
     <dependency>
@@ -22,5 +24,12 @@
 
   <build>
     <finalName>form</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.2</version>
+      </plugin>
+    </plugins>
   </build>
 </project>
